@@ -1,6 +1,5 @@
 package CalcFx;
 
-//errors: factorial
 public class Calculate {
 
     myStack stack;
