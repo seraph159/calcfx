@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="paneArea" prefHeight="519.0" prefWidth="341.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalcFx.Controller">
+    <children>
+        <GridPane fx:id="gridPaneKeys" layoutX="3.0" layoutY="182.0" prefHeight="332.0" prefWidth="336.0">
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="zeroBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="80.0" prefWidth="84.0" text="0" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="eqBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="48.0" prefWidth="105.0" text="=" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="modBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="86.0" prefWidth="118.0" text="\%" GridPane.columnIndex="5">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="sqrtBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="86.0" prefWidth="105.0" text=" √" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="delBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="66.0" prefWidth="132.0" text="DEL" GridPane.columnIndex="3">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="clearBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="83.0" prefWidth="154.0" text="CE" GridPane.columnIndex="2">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="eBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="73.0" prefWidth="105.0" text="e" GridPane.columnIndex="4">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                    <children>
+                        <Button fx:id="lParenBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="48.0" prefWidth="41.0" text="(">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="rParenBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="58.0" prefWidth="42.0" text=")">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <Button fx:id="tanBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="82.0" prefWidth="126.0" text="tan" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="eightBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="160.0" prefWidth="158.0" text="8" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="nineBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="85.0" prefWidth="84.0" text="9" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="sixBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="78.0" prefWidth="131.0" text="6" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="twoBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="108.0" prefWidth="176.0" text="2" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="oneBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="68.0" prefWidth="135.0" text="1" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="fiveBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="97.0" prefWidth="102.0" text="5" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="threeBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="99.0" prefWidth="155.0" text="3" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="cosBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="74.0" prefWidth="105.0" text="cos" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="sinBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="81.0" prefWidth="114.0" text="sin" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="caretBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="82.0" prefWidth="84.0" text="^" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="piBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="90.0" prefWidth="115.0" text="π" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="facBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="69.0" prefWidth="104.0" text="n!" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="divBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="72.0" prefWidth="119.0" text="/" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="mulBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="76.0" prefWidth="87.0" text="*" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="minusBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="48.0" prefWidth="120.0" text="-" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="plusBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="71.0" prefWidth="84.0" text="+" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="sevenBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="170.0" prefWidth="158.0" text="7" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="fourBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="70.0" prefWidth="121.0" text="4" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="dotBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="48.0" prefWidth="102.0" text="." GridPane.columnIndex="3" GridPane.rowIndex="6">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </GridPane>
+      <GridPane layoutX="3.0" layoutY="2.0" prefHeight="180.0" prefWidth="336.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="58.799993896484374" minHeight="10.0" prefHeight="15.199993896484376" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="79.4000030517578" minHeight="10.0" prefHeight="59.999996948242185" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="88.79999389648438" minHeight="10.0" prefHeight="60.80000305175781" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="57.199993896484386" minHeight="4.000006103515602" prefHeight="32.000018310546864" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="hLabel" contentDisplay="CENTER" prefHeight="18.0" prefWidth="43.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="calcLabel1" alignment="CENTER_RIGHT" prefHeight="68.0" prefWidth="336.0" style="-fx-border-color: grey;" wrapText="true" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="calcLabel" alignment="CENTER" prefHeight="74.0" prefWidth="336.0" style="-fx-border-color: grey;" wrapText="true" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                        <Button fx:id="downBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="27.0" prefWidth="184.0" text="▼">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="upBtn" mnemonicParsing="false" onMouseClicked="#onClickEvent" prefHeight="27.0" prefWidth="184.0" text="▲">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+    </children>
+</Pane>
